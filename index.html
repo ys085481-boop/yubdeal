@@ -11,6 +11,21 @@ crossorigin="anonymous"></script>
 </head>
 <body>
 
+    <!-- Hamburger Menu Icon -->
+<div class="menu-icon" onclick="toggleMenu()">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+<!-- Side Menu -->
+<div id="sideMenu" class="side-menu">
+  <a href="about.html">About Us</a>
+  <a href="contact.html">Support</a>
+  <a href="privacy-policy.html">Privacy Policy</a>
+  <a href="disclaimer.html">Disclaimer</a>
+</div>
+
 <header class="header">
     <div class="logo-box">
         <img src="images/logo.png" alt="YubStud Logo">
@@ -539,6 +554,17 @@ crossorigin="anonymous"></script>
 <a href="privacy-policy.html">Privacy Policy</a> |
 <a href="disclaimer.html">Disclaimer</a>
 </footer>
+<script>
+function toggleMenu() {
+  var menu = document.getElementById("sideMenu");
+
+  if (menu.style.right === "0px") {
+    menu.style.right = "-220px";
+  } else {
+    menu.style.right = "0px";
+  }
+}
+</script>
 
 </body>
 </html>

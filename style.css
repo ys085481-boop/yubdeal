@@ -244,3 +244,45 @@
     margin-top:10px;
     font-weight:bold;
 }
+/* Hamburger Icon */
+.menu-icon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.menu-icon div {
+  height: 4px;
+  background: #f5f4f4;
+  margin: 6px 0;
+  border-radius: 2px;
+}
+
+/* Side Menu */
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -220px;
+  width: 200px;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.2);
+  padding-top: 60px;
+  transition: 0.3s;
+  z-index: 1000;
+}
+
+.side-menu a {
+  display: block;
+  padding: 12px 20px;
+  color: #0f0f0f;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.side-menu a:hover {
+  background: #f0f0f0;
+}
